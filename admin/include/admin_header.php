@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <?php require_once("../includes/init.php"); ?>
 
 
@@ -68,7 +69,7 @@
 								
 							</li>
 							<li class="mega-menu"><a href="#"><div>Blog</div></a></li>
-							<li><a href="shop.html"><div>Shop</div></a></li>
+							<li><a href="logout.php"><div>Logout</div></a></li>
 							
 						</ul>
 					</nav><!-- #primary-menu end -->

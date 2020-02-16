@@ -64,52 +64,50 @@ if(isset( $_POST['register-form-submit']) ){
 
 
             <div class="tab-content clearfix" id="tab-register">
-								<div class="card nobottommargin">
-									<div class="card-body" style="padding: 40px;">
-										<h3>Register for an Account</h3>
+						<div class="card nobottommargin">
+							<div class="card-body" style="padding: 40px;">
+								<h3>Register for an Account</h3>
 
-										<form id="register-form" name="register-form" class="nobottommargin" action="#" method="post">
+								<form id="register-form" name="register-form" class="nobottommargin" action="#" method="post">
 
-											<div class="col_full">
-												<label for="register-form-name">First Name:</label>
-												<input type="text" id="register-form-name" name="register-form-first-name" value="" class="form-control" />
-                                            </div>
-                                            
-                                            <div class="col_full">
-												<label for="register-form-name">Last Name:</label>
-												<input type="text" id="register-form-last-name" name="register-form-last-name" value="" class="form-control" />
-											</div>
-
-											<div class="col_full">
-												<label for="register-form-email">Email Address:</label>
-												<input type="text" id="register-form-email" name="register-form-email" value="" class="form-control" />
-											</div>
-
-											<div class="col_full">
-												<label for="register-form-username">Choose a Username:</label>
-												<input type="text" id="register-form-username" name="register-form-username" value="" class="form-control" />
-											</div>
-
-											<div class="col_full">
-												<label for="register-form-password">Choose Password:</label>
-												<input type="password" id="register-form-password" name="register-form-password" value="" class="form-control" />
-											</div>
-
-											<div class="col_full">
-												<label for="register-form-repassword">Re-enter Password:</label>
-												<input type="password" id="register-form-repassword" name="register-form-repassword" value="" class="form-control" />
-											</div>
-
-											<div class="col_full nobottommargin">
-												<button class="button button-3d button-black nomargin" id="register-form-submit" name="register-form-submit" value="register">Register Now</button>
-											</div>
-
-										</form>
+									<div class="col_full">
+										<label for="register-form-name">First Name:</label>
+										<input type="text" id="register-form-name" name="register-form-first-name" value="" class="form-control" />
 									</div>
-								</div>
+									
+									<div class="col_full">
+										<label for="register-form-name">Last Name:</label>
+										<input type="text" id="register-form-last-name" name="register-form-last-name" value="" class="form-control" />
+									</div>
+
+									<div class="col_full">
+										<label for="register-form-email">Email Address:</label>
+										<input type="text" id="register-form-email" name="register-form-email" value="" class="form-control" />
+									</div>
+
+									<div class="col_full">
+										<label for="register-form-username">Choose a Username:</label>
+										<input type="text" id="register-form-username" name="register-form-username" value="" class="form-control" />
+									</div>
+
+									<div class="col_full">
+										<label for="register-form-password">Choose Password:</label>
+										<input type="password" id="register-form-password" name="register-form-password" value="" class="form-control" />
+									</div>
+
+									<div class="col_full">
+										<label for="register-form-repassword">Re-enter Password:</label>
+										<input type="password" id="register-form-repassword" name="register-form-repassword" value="" class="form-control" />
+									</div>
+
+									<div class="col_full nobottommargin">
+										<button class="button button-3d button-black nomargin" id="register-form-submit" name="register-form-submit" value="register">Register Now</button>
+									</div>
+
+								</form>
 							</div>
-
-
+						</div>
+					</div>
 
 
             </div>

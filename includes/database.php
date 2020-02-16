@@ -20,8 +20,6 @@ class Database {
     }
 
 
-
-
     public function query($sql){
 
         $result = $this->connection->query($sql);
@@ -29,6 +27,12 @@ class Database {
         return $result;
 
     }
+
+    public function insert_id() {
+
+		return $this->connection->insert_id;  
+	}
+
 
 }
 

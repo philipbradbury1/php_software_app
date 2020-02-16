@@ -1,8 +1,5 @@
 <?php require_once("includes/init.php"); ?>
 
-
-
-
 <?php
 
 
@@ -23,13 +20,27 @@ if(isset( $_POST['register-form-submit']) ){
 
 		$user->first_name = $first_name;
 		$user->last_name = $last_name;
-		$user->email_address = $email_address;
+		$user->email = $email_address;
 		$user->username = $username;
 		$user->password = $password;
 
 		if($user->create()){
 			echo "User Added";
-			redirect('admin/admin.php');
+
+			$user_found = User::verify_user($username, $password);
+
+
+			if($user_found){
+
+				$session->login($user_found);
+			
+				redirect('admin/index.php');
+			} else{
+				echo 'Incorrect Details';
+			}
+
+
+			redirect('admin/index.php');
 		}else{
 			echo 'errrrrror';
 		}
@@ -48,8 +59,13 @@ if(isset( $_POST['login-form-submit'])){
 	$user_found = User::verify_user($username, $password);
 
 
+
+
 	if($user_found){
-		redirect('admin/admin.php');
+
+		$session->login($user_found);
+	
+		redirect('admin/index.php');
 	} else{
 		echo 'Incorrect Details';
 	}
@@ -659,6 +675,7 @@ if(isset( $_POST['login-form-submit'])){
 			</div>
 
 		</section><!-- #page-title end -->
+
 
 		<!-- Content
 		============================================= -->

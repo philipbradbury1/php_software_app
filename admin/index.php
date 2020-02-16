@@ -1,4 +1,16 @@
+<?php ob_start(); ?>
 <?php  include('include/admin_header.php'); ?>
+
+
+<?php
+
+
+if(!$session->is_signed_in()) {
+
+    redirect("../index.php");
+  }
+
+?>
 
 		<!-- Page Title
 		============================================= -->
