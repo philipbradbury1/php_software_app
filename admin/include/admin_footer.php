@@ -77,12 +77,12 @@
 
 	<!-- External JavaScripts
 	============================================= -->
-	<script src="../assets/js/jquery.js"></script>
-	<script src="../assets/js/plugins.js"></script>
+	<script src="/object_project/assets/js/jquery.js"></script>
+	<script src="/object_project/assets/js/plugins.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
-	<script src="../assets/js/functions.js"></script>
+	<script src="/object_project/assets/js/functions.js"></script>
 
 </body>
 </html>

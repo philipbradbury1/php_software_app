@@ -85,8 +85,7 @@ redirect("../index.php");
 
                                     $user = User::find_by_id($user_id);
 
-                          
-                                   if($user->delete()){ redirect("users.php"); }
+                                    if($user->delete()){ redirect("users.php"); }
                                 }
                                 
                             ?>

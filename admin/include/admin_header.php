@@ -1,5 +1,9 @@
 <?php ob_start(); ?>
-<?php require_once("../includes/init.php"); ?>
+
+<?php 
+$basedir = dirname(__DIR__, 2);
+
+require_once($basedir."/includes/init.php"); ?>
 
 
 <!DOCTYPE html>
@@ -12,14 +16,14 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
-	<link rel="stylesheet" href="../assets/css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="../assets/css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="../assets/css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="../assets/css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="/object_project/assets/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="/object_project/assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="/object_project/assets/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="/object_project/assets/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="/object_project/assets/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="/object_project/assets/css/magnific-popup.css" type="text/css" />
 
-	<link rel="stylesheet" href="../assets/css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="/object_project/assets/css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Document Title
@@ -56,20 +60,11 @@
 					<nav id="primary-menu">
 
 						<ul>
-							<li><a href="index.php"><div>Home</div></a>
-								
-							</li>
-							<li><a href="users.php"><div>Users</div></a>
-							
-							</li>
-							<li class="mega-menu"><a href="#"><div>Pages</div></a>
-								
-							</li>
-							<li class="mega-menu"><a href="#"><div>Portfolio</div></a>
-								
-							</li>
-							<li class="mega-menu"><a href="#"><div>Blog</div></a></li>
-							<li><a href="logout.php"><div>Logout</div></a></li>
+							<li><a href="/object_project/admin/index.php"><div>Home</div></a></li>
+							<li><a href="/object_project/admin/users.php"><div>Users</div></a></li>
+							<li><a href="/object_project/admin/jobs/jobs.php"><div>Jobs</div></a></li>
+							<li><a href="#"><div>HR</div></a></li>
+							<li><a href="/object_project/admin/logout.php"><div>Logout</div></a></li>
 							
 						</ul>
 					</nav><!-- #primary-menu end -->

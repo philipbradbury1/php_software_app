@@ -19,7 +19,7 @@ if(isset( $_POST['register-form-submit']) ){
 
 		$user->first_name = $first_name;
 		$user->last_name = $last_name;
-		$user->email_address = $email_address;
+		$user->email = $email_address;
 		$user->username = $username;
 		$user->password = $password;
 
