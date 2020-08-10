@@ -54,23 +54,25 @@ if(!$session->is_signed_in()) {
 
 
                         <?php
-					/*
-                            $users = User::find_all();
+          
 
+                            $jobs = Job::find_all_jobs();
 
-                            foreach($users as $user){
+                            foreach($jobs as $job){
 
-                              echo '<tr>';
-                              echo   '<td>'. $user->id .'</td>';
-                              echo   '<td>'. $user->first_name .'</td>';
-                              echo   '<td>'. $user->last_name .'</td>';
-                              echo   '<td>'. $user->username .'</td>';
-                              echo   '<td><a href="edit_user.php?edit='.$user->id .'" class="button button-3d button-rounded button-blue">Edit</a></td>';
-                              echo   '<td><a href="users.php?delete='.$user->id .'" class="button button-3d button-rounded button-green">Delete</a></td>';
-                              echo '</tr>';
+                                echo '<tr>';
+                                echo   '<td>'. $job->id .'</td>';
+                                echo   '<td>'. $job->first_name .' ' . $job->last_name .'</td>';
+                                echo   '<td>'. $job->vehicle_reg .'</td>';
+                                echo   '<td>'. $job->vehicle_make .'</td>';
+                                echo   '<td>'. $job->vehicle_model .'</td>';
+                                echo   '<td>'. $job->book_in .' </td>';
+                                echo   '<td>'. $job->completion .' </td>';
+                                echo   '<td>'. $job->vehicle_model .' </td>';
+                                echo '</tr>';
+                              }
 
-                                
-                            }
+                        /*
 
                             ?>
 
@@ -86,7 +88,7 @@ if(!$session->is_signed_in()) {
                           
                                    if($user->delete()){ redirect("users.php"); }
                                 }
-                                */
+                        */
                             ?>
                     
                         </tbody>

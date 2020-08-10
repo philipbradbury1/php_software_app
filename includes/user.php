@@ -22,7 +22,7 @@ class User extends Main{
         $username = $username;
         $password = $password;
 
-        $sql = "SELECT * FROM ". $db_table ." WHERE ";
+        $sql = "SELECT * FROM ". self::$db_table ." WHERE ";
         $sql .= "username = '$username' AND ";
         $sql .= "password = '$password'";
 
