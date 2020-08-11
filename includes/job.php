@@ -26,7 +26,7 @@ class Job extends Main{
         global $database;
 
         return static::find_query("SELECT job.id, job.book_in, job.completion ,vehicle.vehicle_reg, vehicle.vehicle_make, vehicle.vehicle_model, customers.first_name, customers.last_name  
-                                   FROM job 
+                                   FROM ".static::$db_table ."
                                    LEFT JOIN vehicle ON job.vehicle_id = vehicle.id
                                    LEFT JOIN customers ON job.owner_id = customers.id");
 
